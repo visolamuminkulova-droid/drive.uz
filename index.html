@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Chap qism: Logo (agar rasm bo'lmasa bo'sh joy uchun element) -->
+      <div class="header-logo"></div>
+
+
+      <!-- O'rta qism: Navigatsiya (kapsula ichida) -->
+      <nav class="header-nav-capsule">
+        <a href="./index.html" class="nav-link active">Bosh sahifa</a>
+        <a href="./catalog.html" class="nav-link">Avtomobillar</a>
+        <a href="./contact.html" class="nav-link">Nima uchun biz?</a>
+        <a href="#" class="nav-link">Mijozlar fikri</a>
+      </nav>
+
+      <!-- O'ng qism: Telefon raqami va tugma -->
+      <div class="header-right">
+        <a href="tel:+998901234567" class="phone-box">
+          <span class="phone-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </span>
+          <span class="phone-text">+998 90 123 45 67</span>
+        </a>
+
+        <a href="#" class="action-btn">
+          Avtomobillar <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="cr-hero" id="cr">
+      <div class="cr-container">
+
+        <div class="cr-grid">
+          <!-- Chap tomon -->
+          <div class="cr-content">
+            <span class="cr-badge"><i class="cr-badge-dot"></i>Ultra-premium avtomobil ijarasi</span>
+
+            <h1 class="cr-title">
+              Safaringiz uchun <span class="cr-accent">mukammal</span> va hashamatli avtomobillar
+            </h1>
+
+            <p class="cr-text">
+              O'zbekiston bo'ylab eng yangi biznes va luks modellar. Tezkor onlayn rasmiylashtirish,
+              to'liq sug'urta hamda shaffof qulay narxlar bilan yuqori erkinlikni his eting.
+            </p>
+
+            <div class="cr-actions">
+              <a href="#cars" class="cr-btn cr-btn-primary">
+                Avtomobillarni ko'rish
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a href="#contact" class="cr-btn cr-btn-ghost">Biz bilan bog'lanish</a>
+            </div>
+
+            <div class="cr-features">
+              <div class="cr-feature">
+                <span class="cr-feature-icon cr-green">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                100% KASKO sug'urta
+              </div>
+              <div class="cr-feature">
+                <span class="cr-feature-icon cr-blue">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
+                  </svg>
+                </span>
+                5 daqiqada kalit qo'lda
+              </div>
+            </div>
+          </div>
+
+          <!-- O'ng tomon: avtomobil kartasi -->
+          <div class="cr-visual">
+            <div class="cr-car">
+              <div class="cr-car-img">
+                <img-comparison-slider>
+                  <img class="w-[500px] h-[300px]" slot="first" src="./image1.png" />
+                  <img class="w-[500px] h-[300px]" slot="second" src="./malibu.png" />
+                </img-comparison-slider>
+
+              </div>
+              <div class="cr-car-tags">
+                <span class="cr-tag cr-tag-dark"><span class="cr-star">★</span> TOP PREMIUM</span>
+                <span class="cr-tag cr-tag-green">Mavjud</span>
+              </div>
+              <div class="cr-car-info">
+                <div class="cr-car-name">
+                  <h3>Cadillac CT5 / Malibu Prime</h3>
+                  <p>Luks Biznes Klas • 2024 Yangi Seriya</p>
+                </div>
+                <div class="cr-car-price">
+                  <small>MAXSUS NARX</small>
+                  <strong>450 000 <span>so'm/kun</span></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qidiruv paneli -->
+        <form class="cr-search" action="#" method="get">
+          <label class="cr-field">
+            <span class="cr-field-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 17h14M5 17a2 2 0 01-2-2v-3l2-5h14l2 5v3a2 2 0 01-2 2M5 17v2M19 17v2M7 13h.01M17 13h.01" />
+              </svg>
+              Avtomobil tanlang
+            </span>
+            <select>
+              <option>Barcha modellar</option>
+              <option>Cadillac CT5</option>
+              <option>Chevrolet Malibu</option>
+            </select>
+          </label>
+
+          <label class="cr-field">
+            <span class="cr-field-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M3 10h18M8 3v4M16 3v4" />
+              </svg>
+              Olish sanasi
+            </span>
+            <input type="date" value="2026-10-14">
+          </label>
+
+          <label class="cr-field">
+            <span class="cr-field-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M3 10h18M8 3v4M16 3v4" />
+              </svg>
+              Qaytarish sanasi
+            </span>
+            <input type="date" value="2026-10-15">
+          </label>
+
+          <label class="cr-field">
+            <span class="cr-field-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              Olish manzili
+            </span>
+            <select>
+              <option>Toshkent (Markaz)</option>
+              <option>Toshkent aeroporti</option>
+              <option>Samarqand</option>
+            </select>
+          </label>
+
+          <button type="submit" class="cr-search-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+            <span>Qidirish</span>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <script>
+      const form = document.querySelector(".search-form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const pickup = document.getElementById("pickup-date").value;
+        const returning = document.getElementById("return-date").value;
+        const location = document.getElementById("location").value;
+        const carType = document.getElementById("car-type").value;
+
+        if (!pickup || !returning) {
+          alert("Iltimos, olish va qaytarish sanalarini tanlang.");
+          return;
+        }
+
+        if (returning < pickup) {
+          alert("Qaytarish sanasi olish sanasidan oldin bo‘lishi mumkin emas.");
+          return;
+        }
+
+        const params = new URLSearchParams({
+          pickup,
+          returning,
+          location,
+          carType
+        });
+
+        window.location.href = "cars.html?" + params.toString();
+      });
+    </script>
+    ```html
+    <!-- STATISTICS + POPULAR CARS -->
+    <section class="popular-wrap" id="popular-cars">
+      <section class="cr-stats" id="cr-stats">
+        <div class="cr-stats-container">
+          <div class="cr-stats-grid">
+
+            <div class="cr-stat">
+              <strong class="cr-stat-num">50+</strong>
+              <span class="cr-stat-label">Avtomobil parki</span>
+            </div>
+
+            <div class="cr-stat">
+              <strong class="cr-stat-num">1 500+</strong>
+              <span class="cr-stat-label">Mamnun mijozlar</span>
+            </div>
+
+            <div class="cr-stat">
+              <strong class="cr-stat-num cr-stat-accent">99.8%</strong>
+              <span class="cr-stat-label">Xavfsizlik va KASKO</span>
+            </div>
+
+            <div class="cr-stat">
+              <strong class="cr-stat-num">24/7</strong>
+              <span class="cr-stat-label">Doimiy qo'llab-quvvatlash</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="pc" id="popular-cars">
+        <div class="pc__container">
+
+          <div class="pc__head">
+            <div>
+              <span class="pc__eyebrow">ENG KO'P TANLANGANLAR</span>
+              <h2 class="pc__title">Mashhur avtomobillar</h2>
+              <p class="pc__sub">Har bir sayohat uchun eng yangi, qulay va to'liq texnik nazoratdan o'tgan nufuzli
+                avtomobillar.</p>
+            </div>
+            <div class="pc__tabs">
+              <button class="pc__tab pc__tab--active" data-pc-filter="all">Barchasi</button>
+              <button class="pc__tab" data-pc-filter="biznes">Biznes</button>
+              <button class="pc__tab" data-pc-filter="suv">SUV &amp; Oilaviy</button>
+            </div>
+          </div>
+
+          <div class="pc__grid">
+
+            <article class="pc-card" data-pc-cat="biznes">
+              <div class="pc-card__media">
+                <img class="pc-card__img" src="./malibu.png" alt="Chevrolet Malibu 2 Prime">
+                <span class="pc-card__badge pc-card__badge--dark">TOP TANLOV</span>
+                <button class="pc-card__fav" aria-label="Sevimli">♡</button>
+              </div>
+              <div class="pc-card__body">
+                <h3 class="pc-card__name">Chevrolet Malibu 2 Prime</h3>
+                <p class="pc-card__type">BIZNES SEDAN • 2.0L TURBO</p>
+                <div class="pc-card__specs">
+                  <div class="pc-card__spec"><b>253 O.K.</b></div>
+                  <div class="pc-card__spec"><b>5 O'rin</b></div>
+                  <div class="pc-card__spec"><b>8.5L/100km</b></div>
+                </div>
+                <div class="pc-card__foot">
+                  <div class="pc-card__price">
+                    <small>Kunlik ijara:</small>
+                    <strong>450 000<span>so'm</span></strong>
+                  </div>
+                  <a href="#" class="pc-card__btn">Batafsil bron →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pc-card" data-pc-cat="biznes">
+              <div class="pc-card__media">
+                <img class="pc-card__img" src="./kiak5.png" alt="Kia K5 Executive">
+                <span class="pc-card__badge pc-card__badge--blue">PREMIUM</span>
+                <button class="pc-card__fav" aria-label="Sevimli">♡</button>
+              </div>
+              <div class="pc-card__body">
+                <h3 class="pc-card__name">Kia K5 Executive</h3>
+                <p class="pc-card__type">PREMIUM SEDAN • 2.5L GDI</p>
+                <div class="pc-card__specs">
+                  <div class="pc-card__spec"><b>194 O.K.</b></div>
+                  <div class="pc-card__spec"><b>5 O'rin</b></div>
+                  <div class="pc-card__spec"><b>7.8L/100km</b></div>
+                </div>
+                <div class="pc-card__foot">
+                  <div class="pc-card__price">
+                    <small>Kunlik ijara:</small>
+                    <strong>550 000<span>so'm</span></strong>
+                  </div>
+                  <a href="#" class="pc-card__btn">Batafsil bron →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pc-card" data-pc-cat="suv">
+              <div class="pc-card__media">
+                <img class="pc-card__img" src="./traverse.png" alt="Chevrolet Traverse Premier">
+                <span class="pc-card__badge pc-card__badge--green">OILAVIY SUV</span>
+                <button class="pc-card__fav" aria-label="Sevimli">♡</button>
+              </div>
+              <div class="pc-card__body">
+                <h3 class="pc-card__name">Chevrolet Traverse Premier</h3>
+                <p class="pc-card__type">HASHAMATLI SUV • 3.6L V6 AWD</p>
+                <div class="pc-card__specs">
+                  <div class="pc-card__spec"><b>318 O.K.</b></div>
+                  <div class="pc-card__spec"><b>7 O'rin</b></div>
+                  <div class="pc-card__spec"><b>10.0L/100km</b></div>
+                </div>
+                <div class="pc-card__foot">
+                  <div class="pc-card__price">
+                    <small>Kunlik ijara:</small>
+                    <strong>950 000<span>so'm</span></strong>
+                  </div>
+                  <a href="#" class="pc-card__btn">Batafsil bron →</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          var root = document.getElementById('popular-cars');
+          if (!root) return;
+
+          var tabs = root.querySelectorAll('.pc__tab');
+          var cards = root.querySelectorAll('.pc-card');
+
+          tabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+              tabs.forEach(function (t) { t.classList.remove('pc__tab--active'); });
+              tab.classList.add('pc__tab--active');
+              var f = tab.getAttribute('data-pc-filter');
+              cards.forEach(function (c) {
+                c.classList.toggle('pc-card--hidden', f !== 'all' && c.getAttribute('data-pc-cat') !== f);
+              });
+            });
+          });
+
+          root.querySelectorAll('.pc-card__fav').forEach(function (b) {
+            b.addEventListener('click', function () {
+              b.classList.toggle('pc-card__fav--on');
+              b.textContent = b.classList.contains('pc-card__fav--on') ? '♥' : '♡';
+            });
+          });
+        })();
+      </script>
+      <section class="advantages-section">
+        <div class="container">
+          <!-- Chap tomon: Rasm va elementlar -->
+          <div class="advantages-left">
+            <div class="image-card">
+              <!-- Yuqori badge -->
+              <div class="badge-top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                Depozitsiz xizmat imkoniyati
+              </div>
+
+              <!-- Asosiy rasm -->
+              <div class="car-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+                  alt="DriveUz Car" class="car-image">
+              </div>
+
+              <!-- Pastki KASKO & OSAQO bloki -->
+              <div class="badge-bottom">
+                <div class="shield-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4>100% KASKO & OSAQO</h4>
+                  <p>Barcha safarlar to'liq sug'urtalangan va kafolatlangan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'ng tomon: Sarlavha va kartalar -->
+          <div class="advantages-right">
+            <div class="subtitle-badge">BIZNING USTUNLIKLARIMIZ</div>
+            <h2 class="section-title">Nima uchun aynan DriveUz?</h2>
+            <p class="section-desc">
+              Biz faqatgina avtomobil bermaymiz, balki safaringiz xavfsiz, qulay va yuksak darajada o'tishini
+              ta'minlaymiz.
+            </p>
+
+            <!-- 4 ta ustunlik kartochkalari gridi -->
+            <div class="cards-grid">
+              <!-- Karta 01 -->
+              <div class="advantage-card">
+                <span class="card-number">01</span>
+                <h3 class="card-title">Ideal Texnik Holat</h3>
+                <p class="card-text">Har bir avtomobil har safar oldidan sertifikatlangan servisda tekshiruvdan va
+                  kimyoviy
+                  tozalashdan o'tadi.</p>
+              </div>
+
+              <!-- Karta 02 -->
+              <div class="advantage-card">
+                <span class="card-number">02</span>
+                <h3 class="card-title">Shaffof Narxlar</h3>
+                <p class="card-text">Hech qanday yashirin to'lovlar yoki kutilmagan jarimalar yo'q. Shartnomadagi narx
+                  yakuniy hisoblanadi.</p>
+              </div>
+
+              <!-- Karta 03 -->
+              <div class="advantage-card">
+                <span class="card-number">03</span>
+                <h3 class="card-title">5 Daqiqada Rasmiylashtirish</h3>
+                <p class="card-text">Faqat pasport va haydovchilik guvohnomasi yetarli. Hujjatlarni onlayn tarzda tez va
+                  oson tasdiqlaymiz.</p>
+              </div>
+
+              <!-- Karta 04 -->
+              <div class="advantage-card">
+                <span class="card-number">04</span>
+                <h3 class="card-title">24/7 Shaxsiy Konsyerj</h3>
+                <p class="card-text">Yo'lda yuzaga kelgan har qanday masalada professional yordam va almashtirish
+                  xizmati
+                  tunu-kun tayyor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="container">
+          <!-- Yuqori qism: Sarlavha va umumiy reyting -->
+          <div class="testimonials-header">
+            <div class="subtitle-badge">HAQIQIY MIJOZLAR</div>
+            <h2 class="section-title">Mijozlarimiz nima deydi?</h2>
+            <div class="rating-wrapper">
+              <div class="stars">
+                ★★★★★
+              </div>
+              <span class="rating-text">4.9 / 5.0 (250+ haqiqiy baholar)</span>
+            </div>
+          </div>
+
+          <!-- 3 ta mijoz sharhlari kartalari -->
+          <div class="testimonials-grid">
+
+            <!-- Karta 1 -->
+            <div class="testimonial-card">
+              <div class="stars small">★★★★★</div>
+              <p class="testimonial-text">
+                “Avtomobilni onlayn 5 daqiqada bron qildim. Mashina yangi, hidlari yoqimli, salon toza va texnik holati
+                a'lo
+                darajada edi. Samarqand safarimiz juda maroqli o'tdi!”
+              </p>
+              <div class="client-info">
+                <div class="client-avatar blue">AR</div>
+                <div class="client-details">
+                  <h4>Azizbek Rahimov</h4>
+                  <p>Toshkent shahri</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 2 -->
+            <div class="testimonial-card">
+              <div class="stars small">★★★★★</div>
+              <p class="testimonial-text">
+                “Narxlar juda ma'qul, servis esa haqiqatda Yevropa standartlarida. Aeroportga kelishim bilanoq mashinani
+                topshirishdi. Endi doimiy mijozingizman.”
+              </p>
+              <div class="client-info">
+                <div class="client-avatar cyan">MK</div>
+                <div class="client-details">
+                  <h4>Madina Karimova</h4>
+                  <p>Buxoro shahri</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 3 -->
+            <div class="testimonial-card">
+              <div class="stars small">★★★★★</div>
+              <p class="testimonial-text">
+                “Katta oilaviy safarimiz uchun Traverse oldik. 7 kishilik keng salon va qulay o'rindiqlar bolalar bilan
+                safarda katta yordam berdi. Rahmat!”
+              </p>
+              <div class="client-info">
+                <div class="client-avatar purple">SU</div>
+                <div class="client-details">
+                  <h4>Sardor Umarov</h4>
+                  <p>Farg'ona shahri</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="cr-cta" id="cr-cta">
+        <div class="cr-cta-container">
+          <div class="cr-cta-box">
+
+            <span class="cr-cta-badge">Kafolatlangan qulaylik</span>
+
+            <h2 class="cr-cta-title">Keyingi unutilmas safaringizni bugunoq boshlang</h2>
+
+            <p class="cr-cta-text">
+              Istalgan avtomobilni oson va qulay bron qiling. Biz bilan har bir yo'l yangi
+              marralar va qulay xotiralarga aylanadi.
+            </p>
+
+            <div class="cr-cta-actions">
+              <a href="#cars" class="cr-cta-btn cr-cta-btn-primary">
+                Avtomobil tanlash
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 17h14M5 17a2 2 0 01-2-2v-3l2-5h14l2 5v3a2 2 0 01-2 2M5 17v2M19 17v2M7 13h.01M17 13h.01" />
+                </svg>
+              </a>
+
+              <a href="tel:+998901234567" class="cr-cta-btn cr-cta-btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z" />
+                </svg>
+                +998 90 123 45 67
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer class="footer-section">
+    <div class="container">
+      <!-- Yuqori qism: Ustunlar -->
+      <div class="footer-grid">
+
+        <!-- 1-ustun: Brend va ma'lumot -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">DriveUz</div>
+          <p class="footer-desc">
+            DriveUz — O'zbekiston bo'ylab eng ishonchli, yangi va qulay premium avtomobil ijarasi xizmati. Biznes
+            safarlar va oilaviy sayohatlar uchun mukammal hamkor.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2-ustun: Tezkor havolalar -->
+        <div class="footer-col">
+          <h4 class="footer-title">Tezkor havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Avtomobillar</a></li>
+            <li><a href="#">Nima uchun biz?</a></li>
+            <li><a href="#">Mijozlar fikri</a></li>
+          </ul>
+        </div>
+
+        <!-- 3-ustun: Toifalar -->
+        <div class="footer-col">
+          <h4 class="footer-title">Toifalar</h4>
+          <ul class="footer-links">
+            <li><a href="#">Biznes Sedanlar</a></li>
+            <li><a href="#">Hashamatli SUV</a></li>
+            <li><a href="#">Ekonom klass</a></li>
+            <li><a href="#">Haydovchi bilan ijara</a></li>
+          </ul>
+        </div>
+
+        <!-- 4-ustun: Aloqa -->
+        <div class="footer-col">
+          <h4 class="footer-title">Aloqa</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Toshkent sh., Mirobod t.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +998 90 123 45 67
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              info@driveuz.uz
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              24/7 Xizmat dam olishsiz
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Pastki chiziq va huquqlar -->
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 DriveUz. Barcha huquqlar himoyalangan.</p>
+        <div class="footer-legal">
+          <a href="#">Maxfiylik siyosati</a>
+          <a href="#">Foydalanish shartlari</a>
+          <a href="#">Ommaviy oferta</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
+
+</body>
+
+</html>
